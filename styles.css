@@ -1,59 +1,118 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@400;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Abril Fatface', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    color: #ffffff;
+    background: url('assets/SAM_1340.JPG') no-repeat center center fixed;
+    background-size: cover;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-nav {
-    background-color: #444;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+header.fixed--bg {
+    padding: 2rem ;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+    
 }
 
-nav ul li {
-    margin: 0 1rem;
+header.fixed--bg.blur {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    
 }
 
-nav ul li a {
+.wrap-header--padding-sm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title-left {
+    display: flex;
+    align-items: left;
+    margin-right: auto; /* Move left */
+    padding-left: 1rem; /* Add padding to move further left */
+}
+
+.title-right {
+    display: flex;
+    align-items: right;
+    margin-left: auto; /* Move right */
+    padding-right: 1rem; /* Add padding to move further right */
+}
+
+.title-left a {
+    font-family: 'Abril Fatface', sans-serif;
     color: #fff;
     text-decoration: none;
+    font-size: 0rem;
+}
+
+.title-left span {
+    font-family: 'Abril Fatface', sans-serif;
+    color: #ffffff;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+
+.title-right {
+    margin-left: auto;
+}
+
+.title-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.title-right a:hover {
+    text-decoration: underline;
+}
+
+
+.underline-bar {
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 1rem;
+    transition: width 0.3s ease-out;
+}
+
+main {
+    padding: 6rem 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
+    
+    margin: 1rem 0;
     padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.project {
-    margin-bottom: 2rem;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #333;
+   
     color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
