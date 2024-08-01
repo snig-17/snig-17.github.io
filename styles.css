@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@400;700&display=swap');
 
 body {
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: 'Abril Fatface', serif;
     margin: 0;
     padding: 0;
     color: #ffffff;
@@ -60,14 +60,14 @@ header.fixed--bg.blur {
 }
 
 .title-left a {
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: 'Abril Fatface', serif;
     color: #fff;
     text-decoration: none;
     font-size: 0rem;
 }
 
 .title-left span {
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: 'Abril Fatface', serif;
     color: #ffffff;
     margin: 0 0.5rem;
     font-size: 1rem;
